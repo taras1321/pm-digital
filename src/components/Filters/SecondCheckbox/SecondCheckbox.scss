@@ -1,0 +1,57 @@
+.second-ceckbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  position: relative;
+
+  label {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555556;
+  }
+
+  .count {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555556;
+  }
+
+  input {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  input::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ffe177;
+  }
+
+  input.checked::before {
+    background-color: #ffe177;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  input.checked + img {
+    display: block;
+    position: absolute;
+    left: 4px;
+  }
+}

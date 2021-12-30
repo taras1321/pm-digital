@@ -1,0 +1,79 @@
+.range {
+  padding: 20px 0;
+  margin: 15px 0;
+
+  .range-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    .text {
+      font-weight: 300;
+      font-size: 16px;
+      color: #555556;
+      transform: translateY(-3px);
+    }
+  }
+
+  .MuiBox-root {
+    width: 70%;
+
+    .css-187mznn-MuiSlider-root {
+      height: 1px;
+      color: #851fff;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb {
+      width: 15px;
+      height: 15px;
+      box-shadow: none;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb:before {
+      box-shadow: none;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb.Mui-focusVisible {
+      box-shadow: none;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb:hover {
+      box-shadow: 0 0 0 4px #c28eff;
+    }
+
+    .css-eg0mwd-MuiSlider-thumb.Mui-active {
+      box-shadow: 0 0 0 4px #c28eff;
+    }
+
+    .css-14pt78w-MuiSlider-rail {
+      color: #c0c0c0;
+      height: 2px;
+    }
+  }
+
+  .data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #5b5b5b;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+
+    .num {
+      width: 85px;
+      height: 36px;
+      border: 1px solid #5b5b5b;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+    }
+  }
+}

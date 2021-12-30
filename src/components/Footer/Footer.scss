@@ -1,0 +1,156 @@
+.footer {
+  background-color: #000046;
+  padding: 50px 0;
+
+  .cols {
+    display: flex;
+    justify-content: center;
+  }
+
+  .col {
+    margin: 0 25px;
+  }
+
+  .col-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .col-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .social-medias {
+    margin-top: 50px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin: 0 8px;
+      cursor: pointer;
+    }
+  }
+
+  .policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .mobile-pilicy {
+    display: none;
+  }
+
+  .mobile-solical-medias {
+    display: none;
+  }
+
+  .v-line {
+    margin: 0 30px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer {
+    .col {
+      margin: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 775px) {
+  .footer {
+    .cols {
+      flex-wrap: wrap;
+    }
+
+    .col {
+      width: 30%;
+      margin-bottom: 40px;
+    }
+
+    .social-medias {
+      margin-top: 0;
+    }
+
+    .v-line {
+      margin: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 120px;
+    padding-bottom: 25px;
+
+    .col {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .col-header {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .col-item {
+      margin-bottom: 10px;
+    }
+
+    .policy {
+      display: none;
+    }
+
+    .mobile-pilicy {
+      display: block;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #ffffff;
+
+      div {
+        margin-bottom: 10px;
+      }
+    }
+
+    .social-medias {
+      border: none;
+    }
+
+    .mobile-solical-medias {
+      display: block;
+      border-bottom: 1px solid #eaeaea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
+
+      img {
+        margin: 0 5px;
+      }
+    }
+  }
+}

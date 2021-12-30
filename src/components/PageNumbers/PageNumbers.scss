@@ -1,0 +1,40 @@
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  .page-num {
+    width: 26px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #adadad;
+    margin: 0 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dots {
+    cursor: auto;
+  }
+
+  .page-num.active {
+    background-color: #000046;
+    border-radius: 50%;
+    color: #fff;
+  }
+
+  .btn {
+    border: none;
+    background-color: #fff;
+    color: #000046;
+  }
+
+  .btn:disabled {
+    color: #adadad;
+    cursor: not-allowed;
+  }
+}

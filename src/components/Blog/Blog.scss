@@ -1,0 +1,177 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.blog {
+  padding-top: 170px;
+  padding-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .line {
+    width: 170px;
+    height: 1px;
+    background-color: #2a172d;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #2a172d;
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .all-articles {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #851fff;
+    position: relative;
+    align-self: end;
+    margin-right: 40px;
+  }
+
+  .all-articles::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #851fff;
+  }
+
+  .item {
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  .text {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #2a172d;
+  }
+
+  .date {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222222;
+  }
+
+  .slider {
+    margin-top: 30px;
+
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+
+    .slick-dots {
+      position: static;
+      margin-top: 70px;
+
+      li {
+        margin: 0 0px;
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        border: 1px solid #2a172d;
+        opacity: 1;
+        margin: 0 4px;
+        border-radius: 50%;
+
+        button {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        button::before {
+          width: 100%;
+          height: 100%;
+          line-height: 14.5px;
+          font-size: 11px;
+          color: #2a172d00;
+        }
+      }
+
+      li.slick-active,
+      li:hover {
+        transition: 0.1s all ease-in;
+        background-color: #2a172d;
+      }
+    }
+  }
+
+  .slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blog {
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+}
+
+@media (max-width: 850px) {
+  .blog {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog {
+    padding: 40px 0;
+
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .all-articles {
+      align-self: start;
+      margin-right: 0px;
+    }
+
+    .slider {
+      .slick-dots {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .blog {
+    padding: 40px 0;
+
+    .slider-item {
+      width: 100%;
+    }
+
+    .item {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
